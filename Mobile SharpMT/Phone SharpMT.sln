@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phone SharpMT", "Phone SharpMT\Phone SharpMT.csproj", "{2315E69C-B705-4BAB-B6BC-D085A33154AF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4C6576E9-9F32-4DEB-AA7E-85D24C958EB4} = {4C6576E9-9F32-4DEB-AA7E-85D24C958EB4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPFileDialog", "SPOpenFileDialog\SPFileDialog.csproj", "{4C6576E9-9F32-4DEB-AA7E-85D24C958EB4}"
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "Phone SharpMT Install", "..\VSInstall\Phone SharpMT\Phone SharpMT\VSPhone SharpMT.vddproj", "{ED9C7DF4-7100-4768-8028-DC638C7EDFAB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs05.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Phone\u0020SharpMT\\Phone\u0020SharpMT.csproj
+		SccProjectName1 = Phone\u0020SharpMT
+		SccLocalPath1 = Phone\u0020SharpMT
+		SccProjectUniqueName2 = SPOpenFileDialog\\SPFileDialog.csproj
+		SccProjectName2 = SPOpenFileDialog
+		SccLocalPath2 = SPOpenFileDialog
+		SccProjectUniqueName3 = ..\\VSInstall\\Phone\u0020SharpMT\\Phone\u0020SharpMT\\VSPhone\u0020SharpMT.vddproj
+		SccProjectName3 = ../VSInstall/Phone\u0020SharpMT/Phone\u0020SharpMT
+		SccLocalPath3 = ..\\VSInstall\\Phone\u0020SharpMT\\Phone\u0020SharpMT
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2315E69C-B705-4BAB-B6BC-D085A33154AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2315E69C-B705-4BAB-B6BC-D085A33154AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2315E69C-B705-4BAB-B6BC-D085A33154AF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2315E69C-B705-4BAB-B6BC-D085A33154AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2315E69C-B705-4BAB-B6BC-D085A33154AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2315E69C-B705-4BAB-B6BC-D085A33154AF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4C6576E9-9F32-4DEB-AA7E-85D24C958EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C6576E9-9F32-4DEB-AA7E-85D24C958EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C6576E9-9F32-4DEB-AA7E-85D24C958EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C6576E9-9F32-4DEB-AA7E-85D24C958EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9C7DF4-7100-4768-8028-DC638C7EDFAB}.Debug|Any CPU.ActiveCfg = Debug
+		{ED9C7DF4-7100-4768-8028-DC638C7EDFAB}.Debug|Any CPU.Build.0 = Debug
+		{ED9C7DF4-7100-4768-8028-DC638C7EDFAB}.Release|Any CPU.ActiveCfg = Release
+		{ED9C7DF4-7100-4768-8028-DC638C7EDFAB}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

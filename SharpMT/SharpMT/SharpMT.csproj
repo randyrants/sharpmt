@@ -1,0 +1,397 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{848FFFE2-5457-4045-B556-5ABCF04383DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharpMT</RootNamespace>
+    <AssemblyName>SharpMT</AssemblyName>
+    <StartupObject>SharpMT.Program</StartupObject>
+    <ApplicationIcon>Images\App.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/SharpMT/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MagicLibrary, Version=1.7.4.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc" />
+    <Reference Include="SharpMTExtension, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharpMTExtension\SharpMTExtension\bin\Release\SharpMTExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AdvancedSettings.cs" />
+    <Compile Include="Classes\BlogItem.cs" />
+    <Compile Include="Classes\CategoryItem.cs" />
+    <Compile Include="Classes\ComparerMethods.cs" />
+    <Compile Include="Classes\CustomTag.cs" />
+    <Compile Include="Classes\EntryItem.cs" />
+    <Compile Include="Classes\ExecuteStringThread.cs" />
+    <Compile Include="Classes\FindFiles.cs" />
+    <Compile Include="Classes\IniFiles.cs" />
+    <Compile Include="Classes\NativeCode.cs" />
+    <Compile Include="Classes\PlugInItem.cs" />
+    <Compile Include="Classes\PostItem.cs" />
+    <Compile Include="Classes\UnmanagedUrlComboMethods.cs" />
+    <Compile Include="DraftControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DraftControl.designer.cs">
+      <DependentUpon>DraftControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPlugInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPlugInForm.Designer.cs">
+      <DependentUpon>AddPlugInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddTagForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddTagForm.designer.cs">
+      <DependentUpon>AddTagForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddUrlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddUrlForm.designer.cs">
+      <DependentUpon>AddUrlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CategoriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CategoriesForm.designer.cs">
+      <DependentUpon>CategoriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DateTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DateTimeForm.designer.cs">
+      <DependentUpon>DateTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EntryBodyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EntryBodyForm.Designer.cs">
+      <DependentUpon>EntryBodyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindForm.Designer.cs">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InsertPlugInDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertPlugInDataForm.Designer.cs">
+      <DependentUpon>InsertPlugInDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreenForm.Designer.cs">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TracingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TracingForm.Designer.cs">
+      <DependentUpon>TracingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UploadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UploadForm.Designer.cs">
+      <DependentUpon>UploadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormCompareMethods.cs" />
+    <Compile Include="MainFormEventHandlers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormMenuHandlers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormNetwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormRegistry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormThreads.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormToolbarHandlers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DraftControl.resx">
+      <DependentUpon>DraftControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPlugInForm.resx">
+      <DependentUpon>AddPlugInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddTagForm.resx">
+      <DependentUpon>AddTagForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddUrlForm.resx">
+      <DependentUpon>AddUrlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CategoriesForm.resx">
+      <DependentUpon>CategoriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DateTimeForm.resx">
+      <DependentUpon>DateTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EntryBodyForm.resx">
+      <DependentUpon>EntryBodyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindForm.resx">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertPlugInDataForm.resx">
+      <DependentUpon>InsertPlugInDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TracingForm.resx">
+      <DependentUpon>TracingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UploadForm.resx">
+      <DependentUpon>UploadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addLink.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advancedMode.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationIcon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blogLinks.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bold.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customTags.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\italics.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newDraft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openDraft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\options.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plugin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\posted.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveDraft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spellCheck.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underline.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updateCategories.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updateLinks.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updateTextFilters.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uploadImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TracingApp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\App.ico" />
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\icons.bmp" />
+    <EmbeddedResource Include="Images\mainImageList.bmp" />
+    <Content Include="Images\Toolbar\addLink.bmp" />
+    <Content Include="Images\Toolbar\advancedMode.bmp" />
+    <Content Include="Images\Toolbar\blogLinks.bmp" />
+    <Content Include="Images\Toolbar\bold.bmp" />
+    <Content Include="Images\Toolbar\copy.bmp" />
+    <Content Include="Images\Toolbar\customTags.bmp" />
+    <Content Include="Images\Toolbar\cut.bmp" />
+    <Content Include="Images\Toolbar\delete.bmp" />
+    <Content Include="Images\Toolbar\edit.bmp" />
+    <Content Include="Images\Toolbar\find.bmp" />
+    <Content Include="Images\Toolbar\go.bmp" />
+    <Content Include="Images\Toolbar\home.bmp" />
+    <Content Include="Images\Toolbar\italics.bmp" />
+    <Content Include="Images\Toolbar\music.bmp" />
+    <Content Include="Images\Toolbar\newDraft.bmp" />
+    <Content Include="Images\Toolbar\openDraft.bmp" />
+    <Content Include="Images\Toolbar\options.bmp" />
+    <Content Include="Images\Toolbar\paste.bmp" />
+    <Content Include="Images\Toolbar\plugin.bmp" />
+    <Content Include="Images\Toolbar\post.bmp" />
+    <Content Include="Images\Toolbar\posted.bmp" />
+    <Content Include="Images\Toolbar\preview.bmp" />
+    <Content Include="Images\Toolbar\saveDraft.bmp" />
+    <Content Include="Images\Toolbar\spellCheck.bmp" />
+    <Content Include="Images\Toolbar\underline.bmp" />
+    <Content Include="Images\Toolbar\updateCategories.bmp" />
+    <Content Include="Images\Toolbar\updateLinks.bmp" />
+    <Content Include="Images\Toolbar\updateTextFilters.bmp" />
+    <Content Include="Images\Toolbar\uploadImage.bmp" />
+    <Content Include="Images\TracingApp.ico" />
+    <None Include="Resources\find1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

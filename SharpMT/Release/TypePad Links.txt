@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<blogLinks><MTEntries lastn="600">
+  <entryItem id="<$MTEntryID$>">
+    <name><$MTEntryID$></name>
+    <id><$MTEntryID$></id>
+    <title><$MTEntryTitle encode_html="1"$></title>
+    <body><$MTEntryBody encode_html="1"$></body>
+    <datetime><$MTEntryDate format="%Y-%m-%dT%H:%M:%S"$></datetime>
+    <url><$MTEntryPermalink  encode_html="1"$></url>
+  </entryItem>
+</MTEntries></blogLinks>
