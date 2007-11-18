@@ -1,0 +1,89 @@
+body  	{ 
+	margin:0px 0px 20px 10px; 
+	background:#FFFFFF; 
+	font-family: tahoma,verdana,arial,sans-serif; 
+	font-size: 80%; 
+	color:#000000; 
+	}
+
+p     	{ 
+	font-family: tahoma,verdana,arial,sans-serif;
+	color:#000000;
+	}
+
+dl      {
+	margin: 0 0 0 0; 
+	padding: 0 0 0 0; 
+	list-style: inside;
+	font-family: tahoma,verdana,arial,sans-serif;
+	font-weight:bold;
+	}
+
+dd    	{ 
+	margin-left:20px;
+	font-family: tahoma,verdana,arial,sans-serif; 
+	color:#000000;
+	font-weight:normal;
+	}
+
+dt    	{ 	
+	font-family: tahoma,verdana,arial,sans-serif; 
+	color:#000000;
+	font-weight:bold;
+	margin-left:10px;
+	}
+
+ul    	{ 
+	margin: 0 0 0 0; 
+	padding: 0 0 0 0; 
+	list-style: inside;
+	font-family: tahoma,verdana,arial,sans-serif;
+	font-weight:bold;
+	}
+	
+li      {
+	margin-left:10px;
+	font-weight:normal;
+  	}
+
+td    	{ 
+	font-family: tahoma,verdana,arial,sans-serif; 
+	color:#000000;
+	}
+
+tr    	{ 
+	font-family: tahoma,verdana,arial,sans-serif; 
+	color:#000000;
+	}
+
+table 	{ 
+	font-family: tahoma,verdana,arial,sans-serif;
+	font-size: 100%; 
+	margin-left:10px;
+	}
+
+#headline 	{
+	font-family: tahoma,verdana,arial,sans-serif; 
+	font-size: 175%; 
+	color:#000080; 
+	text-decoration:underline;
+	}
+
+#subheadline 	{
+	font-family: tahoma,verdana,arial,sans-serif; 
+	font-size: 140%; 
+	color:#000080; 
+	text-decoration:underline;
+	}
+
+#copyright 	{
+	font-family: tahoma,verdana,arial,sans-serif; 
+	font-size: 85%; 
+	color:#000000;
+	}
+
+#welcome 	{
+	font-family: tahoma,verdana,arial,sans-serif; 
+	font-size: 140%; 
+	color:#000080; 
+	text-decoration: underline overline;}

@@ -1,0 +1,36 @@
+<html><head><title>Tags Options</title><link rel="stylesheet" href="style.css" type="text/css"></head>
+<body>
+
+<div id="headline">Tags Options</div>
+Options in this panel will control what values are inserted for pre-defined tags and what custom tags will be available.
+<br><br>
+<div id="subheadline">Standard Tags</div>
+<dl>
+<dt>Bold:</dt>
+<dd>This tag will automatically wrap itself around whatever text is selected when Bold is selected from the main menu or toolbar.  While it defaults to b it can be changed to another HTML tag, i.e. strong</dd>
+<dt>Italics:</dt>
+<dd>This tag will automatically wrap itself around whatever text is selected when Italics is selected from the main menu or toolbar.  While it defaults to i it can be changed to another HTML tag, i.e. em</dd>
+<dt>Underline:</dt>
+<dd>This tag will automatically wrap itself around whatever text is selected when Underline is selected from the main menu or toolbar.  While it defaults to u it can be changed to another HTML tag, i.e. strike</dd>
+<dt>Image:</dt>
+<dd>This tag is used in junction with the the Upload Image feature.  On the Upload dialog, there is an option to "Insert IMG tag" after the upload is completed; the tag that is inserted is defined by this field.  The tag can be anything - the field [IMAGELINK] will be substituted with the actual link from the Upload Image dialog before it is inserted.  Also, a [ALTTAG] placeholder can be used for the ALT text that is entered on the Upload Image dialog.  It can be something simple like the default of &lt;img src="[IMAGELINK]"&gt; or something more elaborate like &lt;a href="[IMAGELINK]" target="_blank"&gt;&ltimg src="[IMAGELINK]" width="320" height="240" border="0" alt="[ALTTAG]"&gt;&lt;/a&gt; (which would fix the show image at 320x240 and link it to the full-sized image in a new browser window).
+</dd>
+<dt>Reset to Defaults</dt>
+<dd>Clicking this will reset Bold, Italics, Underline, and Image to their default values.</dd>
+</dl>
+<br>
+<div id="subheadline">Custom Tags</div>
+There are up to ten available slots for custom tags; they all act the same way in function, but they will insert different information, depending on how they are configured.
+<br><br>
+<ul>Adding or Editing custom tags:
+<li>Insert some text to be considered a tag, for example: p or br</li>
+<li>Decide whether or not this tag should wrap around the text, like p would or be a self containt tag, like br</li>
+<li>Compare what you see next to the check box to what you expected the tag to do and tweak your text.</li>
+</ul>
+<br>
+It's that simple!  For tags that have attributes, like a div would, those can also be included; if you select "Enclosing tag", you'll see that the attribute does not appear in the closing tag, as is proper.
+<br><br>
+Custom tags are triggered via the main menu, toolbar and keyboard shortcuts; if the less than ten items are displayed, it means that less than ten tags have been assigned in the options.  The keyboard shortcuts are Ctrl+1, Ctrl+2, to Ctrl+0 respectively; the menu and toolbar items incorrect shows them with a D.
+
+</body>
+</html>

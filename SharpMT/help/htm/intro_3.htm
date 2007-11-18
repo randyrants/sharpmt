@@ -1,0 +1,35 @@
+<html><head><title>First Time Users</title><link rel="stylesheet" href="style.css" type="text/css"></head>
+<body>
+
+<div id="headline">First Time Users</div>
+<br>
+<div id="subheadline">Getting a Server</div>
+For this task, you're on your own - all of the following steps assume that you have a server and valid account on that server already!
+<br><br>
+<div id="subheadline">Configuring SharpMT</div>
+The first and most important configuration step of SharpMT is getting it connected to a Blog server.  Without that, there's not going to be too much that you can do with SharpMT as most of its features are dependent on the Blog server.
+<br><br>
+<ul>Accessing SharpMT Options:
+<li>Click on the Tools menu and select "Options..."</li>
+<li>Across the top of this dialog there will be different panels to view; select Server</li>
+</ul>
+<br>
+<dl><u>Server Information:</u>
+<dt>Web Server Name:</dt>
+<dd>Enter the Internet address or network name of your Blog server.  For example: www.hostname.com  <i>http:// is not required for this field</i> --- for TypePad users it is always www.typepad.com</dd>
+<dt>CGI-BIN Path:</dt>
+<dd>Enter the path and file name to your XML-RPC module.  For MT users, this file is named mt-xmlrpc.cgi and will be located in your CGI-BIN directory.  For example, if your link to access your server-based Blog settings is http://www.hostname.com/cgi-bin/mt.cgi then your CGI-BIN path is: /cgi-bin/mt-xmlrpc.cgi --- for TypePad users it is always /t/api</dd>
+<dt>User Name:</dt>
+<dd>Enter the user name that you use to access your Blog's settings.</dd>
+<dt>Password:</dt>
+<dd>Enter the password that you use to access your Blog's settings.</dd>
+<dt>Blog List:</dt>
+<dd>If you click Refresh now, you will see a list of your Blogs appear in this list.</dd>
+<dt>Refresh</dt>
+<dd>Press this button to refresh your Blog-based settings from your server.  You should refresh whenever you've changed your server name, Blog published, Categories, Text Filters, or anything else that is defined by the server.</dd>
+</dl>
+<br>
+When you click OK on this dialog, SharpMT will automatically download a list of Categories and Text Filters from your Blog server as those are also required to effectively work offline and when posting new drafts.  Once that is completed you are now ready to Blog writing while offline.
+
+</body>
+</html>
