@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMT", "SharpMT\SharpMT.csproj", "{848FFFE2-5457-4045-B556-5ABCF04383DD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{495D0C43-167E-40FD-B360-BEDE785937A1} = {495D0C43-167E-40FD-B360-BEDE785937A1}
+		{E62C0C5C-691F-4132-85D5-34FA55155908} = {E62C0C5C-691F-4132-85D5-34FA55155908}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMTPlugIn2", "..\SharpMTPlugIn2\SharpMTPlugIn2\SharpMTPlugIn2.csproj", "{495D0C43-167E-40FD-B360-BEDE785937A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamplePlugIn", "..\ExamplePlugIn\ExamplePlugIn.csproj", "{E62C0C5C-691F-4132-85D5-34FA55155908}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SharpMT Install", "..\VSInstall\SharpMT\SharpMT\VSSharpMT.vdproj", "{CABFBA49-33F4-4FB4-9D95-F474A0C21679}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs05.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\ExamplePlugIn\\ExamplePlugIn.csproj
+		SccProjectName1 = ../ExamplePlugIn
+		SccLocalPath1 = ..\\ExamplePlugIn
+		SccProjectUniqueName2 = SharpMT\\SharpMT.csproj
+		SccProjectName2 = SharpMT
+		SccLocalPath2 = SharpMT
+		SccProjectUniqueName3 = ..\\SharpMTPlugIn2\\SharpMTPlugIn2\\SharpMTPlugIn2.csproj
+		SccProjectName3 = ../SharpMTPlugIn2/SharpMTPlugIn2
+		SccLocalPath3 = ..\\SharpMTPlugIn2\\SharpMTPlugIn2
+		SccProjectUniqueName4 = ..\\VSInstall\\SharpMT\\SharpMT\\VSSharpMT.vdproj
+		SccProjectName4 = ../VSInstall/SharpMT/SharpMT
+		SccLocalPath4 = ..\\VSInstall\\SharpMT\\SharpMT
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{848FFFE2-5457-4045-B556-5ABCF04383DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848FFFE2-5457-4045-B556-5ABCF04383DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848FFFE2-5457-4045-B556-5ABCF04383DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848FFFE2-5457-4045-B556-5ABCF04383DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495D0C43-167E-40FD-B360-BEDE785937A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495D0C43-167E-40FD-B360-BEDE785937A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495D0C43-167E-40FD-B360-BEDE785937A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495D0C43-167E-40FD-B360-BEDE785937A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E62C0C5C-691F-4132-85D5-34FA55155908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E62C0C5C-691F-4132-85D5-34FA55155908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E62C0C5C-691F-4132-85D5-34FA55155908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E62C0C5C-691F-4132-85D5-34FA55155908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CABFBA49-33F4-4FB4-9D95-F474A0C21679}.Debug|Any CPU.ActiveCfg = Debug
+		{CABFBA49-33F4-4FB4-9D95-F474A0C21679}.Debug|Any CPU.Build.0 = Debug
+		{CABFBA49-33F4-4FB4-9D95-F474A0C21679}.Release|Any CPU.ActiveCfg = Release
+		{CABFBA49-33F4-4FB4-9D95-F474A0C21679}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

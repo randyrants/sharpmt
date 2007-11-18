@@ -1,0 +1,224 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B984E8C-66FA-422D-B93B-1062F844B1FC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Pocket SharpMT</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OutputFileFolder>\Program Files\Pocket SharpMT</OutputFileFolder>
+    <RootNamespace>Pocket_SharpMT</RootNamespace>
+    <StartupObject>Pocket_SharpMT.Dialog_Main</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <FormFactorID>
+    </FormFactorID>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OSVersion>4.20</OSVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PlatformID>3C41C503-53EF-4c2a-8DD4-A8217CAD115E</PlatformID>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <DeployDirSuffix>$(AssemblyName)</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>0</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;PocketPC</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>0</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;PocketPC</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="mscorlib">
+      <Name>MSCorLib</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialog_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_AddUrl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Contacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Main.Designer.cs">
+      <DependentUpon>Dialog_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_Main_Shared.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Preferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_Upload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sortObjects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Objects.code\CAdvSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Objects.code\CBlogItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Objects.code\CCatItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Objects.code\CEntryItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Objects.code\CPostItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Objects.code\EditMenuHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_POOM.code\PocketOutlook.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_POOM.code\PocketOutlookControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_POOM.code\PO_Contact.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_POOM.code\PO_Folder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_POOM.code\PO_ItemCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_POOM.code\PO_OutlookItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Dialog_About.resx">
+      <DependentUpon>Dialog_About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog_AddUrl.resx">
+      <DependentUpon>Dialog_AddUrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog_Categories.resx">
+      <DependentUpon>Dialog_Categories.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog_Contacts.resx">
+      <DependentUpon>Dialog_Contacts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog_Main.resx">
+      <DependentUpon>Dialog_Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog_Preferences.resx">
+      <DependentUpon>Dialog_Preferences.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog_Upload.resx">
+      <DependentUpon>Dialog_Upload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

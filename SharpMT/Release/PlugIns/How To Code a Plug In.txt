@@ -1,0 +1,65 @@
+So you want to make a SharpMT Extension Plug-In?
+
+What's it do?
+-------------
+The notion of a Plug-In is that there is now a way to extend a SharpMT.  The idea 
+came out of a feature that I planned to do and that was to have a window that could 
+take a book title and/or author that would contact Amazon and return a list of URL's - 
+from that list, I could select a URL and shove it into a Draft's edit box.
+
+Rather than coding this into the main SharpMT window, I thought it would be a neat 
+idea to make it an add-on and that way other people could do the same thing with other 
+servers and other searches... or better yet, do things beyond searches - who knows what 
+people can do?
+
+How do I make one?
+------------------
+- Get Visual Studio.NET 2005 and create a Class Library in any of the languages that support .NET 2.0
+
+- In this new project, select Add Refernce and point it to the SharpMTExtension.dll that's in the 
+SharpMT directory
+- Set the main class to include/using RandyRants.SharpMTExtension
+- Make the main class inherit the ISharpMTExtension interface
+- Provide all of the required Properties and Methods
+- Compile: you can now distribute your DLL to any SharpMT user (you don't have to (and shouldn't) 
+distribute the SharpMTExtension.dll)
+
+What are the required Properties and Methods?
+---------------------------------------------
+These are explained in the included ExamplePlugIn.cs for examples and comments but here's some background:
+
+Always used:
+------------
+(get) DisplayName - this is the name that will appear on the SharpMT menu
+(get) DisplayDescription - the text here is shown as part of the add dialog (for the end user benefit)
+(get) HasInputGUI - if your Plug-In has it's own forms, set this to true
+                  - or if you want SharpMT to use it's Input form, set to false
+(get) ReplaceSelectedText - if you want SharpMT to replace any selected text with your result, set this to true
+                  - or if you want SharpMT to insert your result, set to false
+
+
+If your Plug-In has it's own UI: (HasInputGUI returns true)
+--------------------------------
+      ExecuteString() - when the menu item is clicked this method is called
+                      - all forms should be opened here; SharpMT will run it in its own thread
+                      - it should return a string that will be inserted into the SharpMT text box
+
+If your Plug-In does not have it's own UI: (HasInputGUI returns false)
+------------------------------------------
+(get) ParametersPassed - this tells SharpMT how many text boxes it should show on the input dialog
+(get) ParamOne - when the input dialog opens the get is used to set the label
+      ParamTwo
+      ParamThree
+(set) ParamOne - these are set and should be used as part of the ExecuteString/ExecuteList method
+      ParamTwo
+      ParamThree
+(get) ReturnsList - if you plan to use ExecuteList set true; for ExecuteString set false
+      ExecuteString() - if ReturnsList is false, this is called when Go is clicked
+                      - it should return a string that will be inserted into the SharpMT text box
+      ExecuteList() - if ReturnsList is true, this is called when Go is clicked
+                    - it should return an array of strings in the form of object[]
+
+What else?
+----------
+That's about it.  SharpMT should handle all of the UI that can be expected, so code away and if 
+you have any feedback, please email me at randyrants@hotmail.com or at http://www.randyrants.com
