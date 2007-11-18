@@ -1,0 +1,19 @@
+<html><head><title>Preview tab</title><link rel="stylesheet" href="style.css" type="text/css"></head>
+<body>
+
+<div id="headline">Preview tab</div>
+The Preview tab uses an embedded browser control to show you what your current text looks like when properly rendered, based on the previewHtml.htm file.  While CSS sheets are not available in this preview, the CSS style can be embeded within the previewHtml.htm file using the &lt;style&gt; tag.  Also, if this draft's Text Formatting is set to "Convert Line Breaks" then its effects will be reflected in this preview; this is the only Text Formatting option that will effect SharpMT.<br><br>
+
+<div id="subheadline">Preview View Options</div>
+Set in the previewHtml.htm file, found in the SharpMT directory.
+<table border="0">
+<tr><td><u><b>Field name</b></u></td><td><u><b>Text inserted</b></u></td></tr>
+<tr><td>&lt;$MTEntryBody$&gt;</td><td>The text from the Entry Body field</td></tr>
+<tr><td>&lt;$MTEntryCategory$&gt;</td><td>The currently select primary category</td></tr>
+<tr><td>&lt;$MTEntryExcerpt$&gt;</td><td>The text from the Excerpt field</td></tr>
+<tr><td>&lt;$MTEntryMore$&gt;</td><td>The text from the Extended Entry field</td></tr>
+<tr><td>&lt;$MTEntryTitle$&gt;</td><td>The title that is set in the Title field</td></tr>
+</table>
+
+</body>
+</html>

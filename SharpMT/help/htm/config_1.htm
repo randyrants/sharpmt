@@ -1,0 +1,32 @@
+<html><head><title>Server Options</title><link rel="stylesheet" href="style.css" type="text/css"></head>
+<body>
+
+<div id="headline">Server Options</div>
+Options in this panel are used to set up a connection to a Blog server and fine tune how Blog Links are handled when collected from a server.
+<br><br>
+<div id="subheadline">Server Options</div>
+<dl>
+<dt>Web Server Name:</dt>
+<dd>Enter the Internet address or network name of your Blog server.  For example: www.hostname.com  <i>http:// is not required for this field</i></dd>
+<dt>CGI-BIN Path:</dt>
+<dd>Enter the path and file name to your XML-RPC module.  For MT users, this file is named mt-xmlrpc.cgi and will be located in your CGI-BIN directory.  For example, if your link to access your server-based Blog settings is http://www.hostname.com/cgi-bin/mt.cgi then your CGI-BIN path is: /cgi-bin/mt-xmlrpc.cgi</dd>
+<dt>User Name:</dt>
+<dd>Enter the user name that you use to access your Blog's settings.</dd>
+<dt>Password:</dt>
+<dd>Enter the password that you use to access your Blog's settings.</dd>
+<dt>Blog List:</dt>
+<dd>If you click Refresh now, you will see a list of your Blogs appear in this list.</dd>
+<dt>Refresh</dt>
+<dd>Press this button to refresh your Blog-based settings from your server.  You should refresh whenever you've changed your server name, Blog published, Categories, Text Filters, or anything else that is defined by the server.</dd>
+</dl>
+<br>
+<div id="subheadline">Blog Links Options</div>
+<dl>
+<dt>When Updating Links...</dt>
+<dd>Because SharpMT keeps list of Blog posts that have already been posted to the Blog server, these options will tell SharpMT how to handle the information sent from the server when you click "Update Blog Links" on the main window.  If you want to replace the existing Blog Links list with a new list from the server, select "Replace old links with new links" - if you want new links to be appended to the end of the existing list select "Add newer links to list".  Either way, "Posts to Retrieve" will cap the number of entries retrieved to a fixed number.  These options will be used the next time you click "Update Blog Links" from the main menu or toolbar.</dd>
+</dl>
+<br>
+When you click OK on this dialog, SharpMT will automatically download a list of Categories and Text Filters from your Blog server as those are also required to effectively work offline and when posting new drafts.  Once that is completed you are now ready to Blog writing while offline.
+
+</body>
+</html>

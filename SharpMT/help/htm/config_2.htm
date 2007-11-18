@@ -1,0 +1,37 @@
+<html><head><title>Editor Options</title><link rel="stylesheet" href="style.css" type="text/css"></head>
+<body>
+
+<div id="headline">Editor Options</div>
+Options in this panel are global-level settings that will effect how SharpMT works, regardless of draft-level settings.
+<br><br>
+<div id="subheadline">Music Options</div>
+A number of modern computer-based MP3 players allow other application to "see" what song is currently playing, assuming that a particular plug-in is installed and enabled.  These plug-ins are readily available for WinAmp2, WinAmp3, iTunes, or Windows Media Player - please check the online FAQ for the most recent download locations for these - and work seamlessly with SharpMT.  The options in this section are used to define how the "song" information will be formatted when Now Playing is clicked from the main menu or toolbar.
+<br><br>
+In the Available Item list, you may select one of the supported fields of information; when you click Add, it is put into the Inserted text text box.  Whatever text is put into this box will be inserted into your drafts when Now Playing is clicked - provided that a supported MP3 player is playing a song! - with the respective music fields filled in with the proper data.  The fields that are supported by this plug-in are listed below
+<br><br>
+<ul>Now Playing insertion fields:
+<li>[ALBUM] - Album/CD Title</li>
+<li>[ARTIST] - Recording artist's name</li>
+<li>[SONG] - Song title</li>
+<li>[DURATION] - Duration of current song</li>
+</ul>
+<br>
+<div id="subheadline">Application Options</div>
+<dl>
+<dt>Minimize to Sys Tray:</dt>
+<dd>When an application is minimized, it usually appears in the TaskBar and can be restored from there with a single click.  When this option is unchecked, that is how SharpMT will behave.  As an alternative, some users would rather have an icon appear in the System Tray - the part of the TaskBar where the clock is usually shown - and the regular TaskBar button removed.  When this option is checked, and SharpMT is minimized, an icon will appear near the clock; to restore SharpMT, click this icon once and the application will be restored. <i>(default: unchecked)</i></dd>
+<dt>Show tracing window:</dt>
+<dd>SharpMT includes an additional window that can be useful to troubleshoot Client/Server problems - or if a user is curious to see what information is sent to and from the server.  Check this option and restart SharpMT to activate the tracing window; uncheck this option and restart to hide it again. <i>(default: unchecked)</i></dd>
+<dt>Check for New Versions:</dt>
+<dd>When this option is select, SharpMT attempts to connect to the Internet to check the RandyRants.com server for notification of a new version.  If you don't have a network connection available, you will not be notified; it will quietly accept that there's no connection so as not to bother you. <i>(default: checked)</i></dd>
+<dt>Font options:</dt>
+<dd>Click this button to open a Font selection dialog that will set the font show in the Entry Body, Extended Entry, and Excerpt fields.  This setting has no impact on the font used when posting to a Blog server and is strictly used for visual preference while running SharpMT.</dd>
+<dt>Clear MRU List:</dt>
+<dd>When working with drafts, there is a section on the File menu that tracks the last eight drafts that have been opened - click the Clear MRU List button to instantly clear this list</dd>
+</dl>
+<br>
+<div id="subheadline">My Drafts</div>
+As part of the installation procedure, SharpMT created a new folder within the My Documents folder called My Drafts.  SharpMT will use this folder to store (and open) all of the drafts that you create and edit.  If you want to point SharpMT to another default location for storing drafts, click the Browse button to find a new folder.  To return to the default location of \My Documents\My Drafts, click the Default button.
+
+</body>
+</html>

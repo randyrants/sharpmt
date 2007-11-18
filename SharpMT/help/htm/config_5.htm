@@ -1,0 +1,28 @@
+<html><head><title>Plug-In Options</title><link rel="stylesheet" href="style.css" type="text/css"></head>
+<body>
+
+<div id="headline">Plug-In Options</div>
+Options that let you extend SharpMT to accept input from RSS Aggregators and to support extension libraries.
+<br><br>
+<div id="subheadline">RSS Aggregator Plug-In Options</div>
+One of the features of SharpMT allows an IBlogExtension-enabled RSS Aggregator to send information into a SharpMT draft.  To provide as much flexibility as possible, SharpMT can insert this information into one of five different field.  The text's format is controlled by a different file (RSSFormat.txt); this option is used strictly for insert location on the new draft.
+<br><br>
+<ul>Available Fields:
+<li>Entry Body</li>
+<li>Extended Entry</li>
+<li>Excerpt</li>
+<li>Keywords</li>
+<li>Title</li>
+</ul>
+
+<br>
+<div id="subheadline">SharpMT Extension Plug-Ins</div>
+SharpMT Extension Plug-Ins can be developed by me and by other programmers using the ISharpMTExtension - each Extension will provide different functionality, depending on the coder that worked on it.  SharpMT ships with two Plug-Ins, one of which is an example and the other is pretty useful.  From this dialog you can add what Plug-Ins that SharpMT should be aware of; by default no Plug-In is loaded.
+<dl>
+<dt>#MT Calculator - ExamplePlugIn.dll</dt>
+<dd>This is the example Plug-In and the C# Source Code is included.  This Plug-In takes two numbers as input and returns a few different results, just to show how a Plug-In would work.</dd>
+<dt>Amazon Plug-In - Amazon-PlugIn.dll</dt>
+<dd>This is the useful one.  When you click use this Plug-In, it will ask you for a Book and/or Author; clicking Go will contact Amazon and return a list of links for whatever books match your query.  Obviously, you will need to be online to use this feature.</dd>
+</dl>
+</body>
+</html>

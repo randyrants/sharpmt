@@ -1,0 +1,25 @@
+<html><head><title>RSS Aggregator Plug-In</title><link rel="stylesheet" href="style.css" type="text/css"></head>
+<body>
+
+<div id="headline">RSS Aggregator Plug-In</div>
+SharpMT includes an DLL file that has been designed to be used by other applications that support the IBlogExtension interface, most notably RSS Aggregators.  The purpose of this process has been designed to allow other applications to insert text into new drafts from outside SharpMT.
+<br><br>
+<div id="subheadline">Plug-In Installation</div>
+Each of the RSS Aggregators have a different plug-in installation process, so follow their instructions for adding a new plug-in.  The SharpMT plug-in that the Aggregator will be looking for is SharpMTPlugIn.dll which is installed to the SharpMT directory. 
+<br><br>
+<div id="subheadline">Plug-In Configuration</div>
+For the most part, the RSS Aggregator will send a title, a URL, and a brief description for the Blog page you're reading, but the format that this information comes to the plug-in is always different.  Consequently, before the information gets to SharpMT, the plug-in converts the information based on another file: RSSFormat.txt.  This file is stored in your users' Application Data\RandyRants.com\SharpMT directory, most often C:\Documents and Settings\YourUserName\Application Data\RandyRants.com\SharpMT.  However you format the text in this file will be reflected when the information is posted to SharpMT with the following placeholders substituted with actual data.<br>
+
+<table border="0">
+<tr><td><u><b>Field name</b></u></td><td><u><b>Text inserted</b></u></td></tr>
+<tr><td>[RSSDESCRIPTION]&nbsp;&nbsp;</td><td>The RSS' story description (if available)</td></tr>
+<tr><td>[RSSLINK]</td><td>The RSS' story link</td></tr>
+<tr><td>[RSSTITLE]</td><td>The RSS' story title</td></tr>
+</table>
+<br>
+<div id="subheadline">Plug-In Options</div>
+The data sent in via the plug-in can inserted into any one of the "main" text boxes; this setting is found on the <a href="config_5.htm">Plug-In panel</a> of the Options dialog.
+
+
+</body>
+</html>
