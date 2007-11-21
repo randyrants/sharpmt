@@ -8,11 +8,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phone SharpMT", "Phone Shar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPFileDialog", "SPOpenFileDialog\SPFileDialog.csproj", "{4C6576E9-9F32-4DEB-AA7E-85D24C958EB4}"
 EndProject
-Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "Phone SharpMT Install", "..\VSInstall\Phone SharpMT\Phone SharpMT\VSPhone SharpMT.vddproj", "{ED9C7DF4-7100-4768-8028-DC638C7EDFAB}"
-EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
+		SccNumberOfProjects = 3
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs05.codeplex.com/
 		SccLocalPath0 = .
@@ -22,9 +20,6 @@ Global
 		SccProjectUniqueName2 = SPOpenFileDialog\\SPFileDialog.csproj
 		SccProjectName2 = SPOpenFileDialog
 		SccLocalPath2 = SPOpenFileDialog
-		SccProjectUniqueName3 = ..\\VSInstall\\Phone\u0020SharpMT\\Phone\u0020SharpMT\\VSPhone\u0020SharpMT.vddproj
-		SccProjectName3 = ../VSInstall/Phone\u0020SharpMT/Phone\u0020SharpMT
-		SccLocalPath3 = ..\\VSInstall\\Phone\u0020SharpMT\\Phone\u0020SharpMT
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +36,6 @@ Global
 		{4C6576E9-9F32-4DEB-AA7E-85D24C958EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C6576E9-9F32-4DEB-AA7E-85D24C958EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C6576E9-9F32-4DEB-AA7E-85D24C958EB4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED9C7DF4-7100-4768-8028-DC638C7EDFAB}.Debug|Any CPU.ActiveCfg = Debug
-		{ED9C7DF4-7100-4768-8028-DC638C7EDFAB}.Debug|Any CPU.Build.0 = Debug
-		{ED9C7DF4-7100-4768-8028-DC638C7EDFAB}.Release|Any CPU.ActiveCfg = Release
-		{ED9C7DF4-7100-4768-8028-DC638C7EDFAB}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

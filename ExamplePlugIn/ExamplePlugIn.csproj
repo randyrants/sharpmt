@@ -34,7 +34,7 @@
   <ItemGroup>
     <Reference Include="SharpMTExtension, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SharpMTExtension\SharpMTExtension\bin\Release\SharpMTExtension.dll</HintPath>
+      <HintPath>..\SharpMTExtension\SharpMTExtension\bin\Debug\SharpMTExtension.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -46,6 +46,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)SharpMT\bin\Release\$(TargetFileName)"</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)SharpMT\bin\$(Configuration)\$(TargetFileName)"</PostBuildEvent>
   </PropertyGroup>
 </Project>

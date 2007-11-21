@@ -3,15 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMT", "SharpMT\SharpMT.csproj", "{848FFFE2-5457-4045-B556-5ABCF04383DD}"
 	ProjectSection(ProjectDependencies) = postProject
-		{495D0C43-167E-40FD-B360-BEDE785937A1} = {495D0C43-167E-40FD-B360-BEDE785937A1}
 		{E62C0C5C-691F-4132-85D5-34FA55155908} = {E62C0C5C-691F-4132-85D5-34FA55155908}
+		{495D0C43-167E-40FD-B360-BEDE785937A1} = {495D0C43-167E-40FD-B360-BEDE785937A1}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMTPlugIn2", "..\SharpMTPlugIn2\SharpMTPlugIn2\SharpMTPlugIn2.csproj", "{495D0C43-167E-40FD-B360-BEDE785937A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamplePlugIn", "..\ExamplePlugIn\ExamplePlugIn.csproj", "{E62C0C5C-691F-4132-85D5-34FA55155908}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3DEF28DD-E293-4620-A81C-DA1777606EAF} = {3DEF28DD-E293-4620-A81C-DA1777606EAF}
+	EndProjectSection
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SharpMT Install", "..\VSInstall\SharpMT\SharpMT\VSSharpMT.vdproj", "{CABFBA49-33F4-4FB4-9D95-F474A0C21679}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMTExtension", "..\SharpMTExtension\SharpMTExtension\SharpMTExtension.csproj", "{3DEF28DD-E293-4620-A81C-DA1777606EAF}"
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
@@ -28,9 +31,9 @@ Global
 		SccProjectUniqueName3 = ..\\SharpMTPlugIn2\\SharpMTPlugIn2\\SharpMTPlugIn2.csproj
 		SccProjectName3 = ../SharpMTPlugIn2/SharpMTPlugIn2
 		SccLocalPath3 = ..\\SharpMTPlugIn2\\SharpMTPlugIn2
-		SccProjectUniqueName4 = ..\\VSInstall\\SharpMT\\SharpMT\\VSSharpMT.vdproj
-		SccProjectName4 = ../VSInstall/SharpMT/SharpMT
-		SccLocalPath4 = ..\\VSInstall\\SharpMT\\SharpMT
+		SccProjectUniqueName4 = ..\\SharpMTExtension\\SharpMTExtension\\SharpMTExtension.csproj
+		SccProjectName4 = ../SharpMTExtension/SharpMTExtension
+		SccLocalPath4 = ..\\SharpMTExtension\\SharpMTExtension
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,10 +52,10 @@ Global
 		{E62C0C5C-691F-4132-85D5-34FA55155908}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E62C0C5C-691F-4132-85D5-34FA55155908}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E62C0C5C-691F-4132-85D5-34FA55155908}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CABFBA49-33F4-4FB4-9D95-F474A0C21679}.Debug|Any CPU.ActiveCfg = Debug
-		{CABFBA49-33F4-4FB4-9D95-F474A0C21679}.Debug|Any CPU.Build.0 = Debug
-		{CABFBA49-33F4-4FB4-9D95-F474A0C21679}.Release|Any CPU.ActiveCfg = Release
-		{CABFBA49-33F4-4FB4-9D95-F474A0C21679}.Release|Any CPU.Build.0 = Release
+		{3DEF28DD-E293-4620-A81C-DA1777606EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DEF28DD-E293-4620-A81C-DA1777606EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DEF28DD-E293-4620-A81C-DA1777606EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DEF28DD-E293-4620-A81C-DA1777606EAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
