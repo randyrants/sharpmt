@@ -52,7 +52,7 @@
     <Reference Include="MagicLibrary, Version=1.7.4.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc" />
     <Reference Include="SharpMTExtension, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\SharpMTExtension\SharpMTExtension\bin\Release\SharpMTExtension.dll</HintPath>
+      <HintPath>..\..\SharpMTExtension\SharpMTExtension\bin\Debug\SharpMTExtension.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
